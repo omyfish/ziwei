@@ -1,0 +1,9 @@
+<div>
+    <app-employee-overview 
+    [employees]='employees'
+    (editEmployee)='editEmployee($event)'>
+  </app-employee-overview>
+  </div>
+  <hr/>
+
+<button [disabled]='dialogOpen' (click)='openDialog(true)'>Add</button>

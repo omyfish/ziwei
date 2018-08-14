@@ -1,0 +1,39 @@
+  <div class="wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <ul class="list-unstyled components">
+            <p>Admin Panel</p>
+            <li class="active">
+                <a (click)="isEmpCollapsed = !isEmpCollapsed" data-toggle="collapse" [attr.aria-expanded]="!isEmpCollapsed" class="dropdown-toggle">Employee</a >
+                <ul [ngClass]="isEmpCollapsed? 'list-unstyled' : 'collapse list-unstyled'" id="homeSubmenu">
+                    <li>
+                        <a routerLink="./employee">Overview</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a (click)="isCollapsed = !isCollapsed" data-toggle="collapse" [attr.aria-expanded]="!isCollapsed" class="dropdown-toggle">Pages</a >
+                <ul [ngClass]="isCollapsed? 'list-unstyled' : 'collapse list-unstyled'" id="pageSubmenu">
+                    <li>
+                        <a href="#">Page 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Portfolio</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</div>

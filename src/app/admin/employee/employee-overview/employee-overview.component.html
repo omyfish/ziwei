@@ -1,0 +1,18 @@
+
+ <table class='table table-hover'>
+   <thead>
+     <td>First Name</td>
+     <td>Last Name</td>
+     <td>Email</td>
+     <td>Action</td>
+  </thead>
+   <tr *ngFor='let employee of employees;let i=index'>
+     <td>{{employee.firstname}}</td>
+     <td>{{employee.lastname}}</td>
+     <td>{{employee.email}}</td>
+     <td>
+       <input type="button" value="Edit" (click)='edit(i)' />
+       <input type="button" value="Delete" (click)='delete(i)' />
+     </td>
+  </tr>
+ </table>
