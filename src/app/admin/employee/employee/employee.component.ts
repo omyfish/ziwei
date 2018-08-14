@@ -19,6 +19,7 @@ export class EmployeeComponent implements OnInit {
   constructor(private dialog: MatDialog) { }
 
   ngOnInit() {
+    this.employees = JSON.parse(localStorage.getItem('employee'));
     this.employee = new Employee();
   }
 
@@ -32,6 +33,7 @@ export class EmployeeComponent implements OnInit {
       this.currentEmployee.lastname = employee.lastname;
       this.currentEmployee.email = employee.email;
     }
+    localStorage.setItem('employee', JSON.stringify(this.employees));
     this.showDialog = false;
   }
 
