@@ -1,23 +1,29 @@
-<table class='table table-hover'>
-<tr>
-  <td>父母宫</td>
-  <td>兄弟宫</td>
-  <td>田宅宫</td>
-  <td>迁移宫</td>
-</tr>
-<tr>
-    <td>奴仆宫</td>
-    <td colspan="2" rowspan="2"></td>
-    <td>子女宫</td>
-  </tr>
-  <tr>
-      <td>财帛宫</td>
-      <td>福德宫</td>
-    </tr>
-    <tr>
-        <td>官禄共</td>
-        <td>夫妻宫</td>
-        <td>疾厄宫</td>
-        <td>命宫</td>
-      </tr>
-  </table>
+
+<div class='full-page'>
+    <canvas class='canvas' #canvas></canvas>
+    <table class='table table-hover' cellpadding="0" cellspacing="0" >
+        <tr>
+          <td></td>
+          <td>兄弟宫</td>
+          <td>田宅宫</td>
+          <td>迁移宫</td>
+        </tr>
+        <tr>
+            <td>奴仆宫</td>
+            <td colspan="2" rowspan="2">
+              <button (click)="addNumber()">Move</button>
+            </td>
+            <td>子女宫</td>
+          </tr>
+          <tr>
+              <td>财帛宫</td>
+              <td>福德宫</td>
+            </tr>
+            <tr>
+                <td>官禄共</td>
+                <td>夫妻宫</td>
+                <td>疾厄宫</td>
+                <td>命宫</td>
+              </tr>
+          </table>
+</div>

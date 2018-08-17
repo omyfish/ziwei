@@ -12,6 +12,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PalaceComponent } from './palace/palace.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -24,7 +25,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    PalaceComponent
   ],
   imports: [
     RouterModule.forRoot(
